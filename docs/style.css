@@ -1,0 +1,14 @@
+body {
+    background-color: rgb(249, 229, 246);
+    }
+    
+    .lessons a {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    }
+    
+    .lessons li {
+    margin-top: 30px;
+    }
+    
