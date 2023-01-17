@@ -1,0 +1,13 @@
+ul {
+  list-style-type: none;
+}
+.mainList {
+  display: flex;
+  justify-content: space-around;
+}
+
+.categoriesList,
+.moreList {
+  margin-top: 10px;
+  padding: 0;
+}
