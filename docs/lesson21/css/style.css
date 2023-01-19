@@ -1,0 +1,22 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+}
+
+.title__child-1 {
+  font-size: 4rem;
+  line-height: 300%;
+  font-family: "Lobster", cursive;
+}
+
+.title__child-2 {
+  font-size: 3rem;
+  line-height: 100%;
+  font-family: "Sofia Sans", sans-serif;
+}
+
+.title__child-3 {
+  font-size: 2rem;
+  line-height: 200%;
+  font-family: 'Caveat', cursive;
+}
