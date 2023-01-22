@@ -1,0 +1,25 @@
+.wrap {
+  padding: 5px 100px 5px;
+}
+
+.block__1 {
+  height: 700px;
+  width: 100%;
+  margin-bottom: 100px;
+  box-shadow: 0 0 10px rgb(61, 30, 30);
+  border-radius: 10px;
+  background: url("../image/cat.jpg") 50% 50% no-repeat,
+    linear-gradient(rgb(208, 195, 195), rgb(31, 83, 101));
+}
+
+.block__2 {
+  height: 700px;
+  width: 100%;
+  margin-bottom: 100px;
+  box-shadow: 0 0 10px rgb(61, 30, 30);
+  border-radius: 10px;
+  background-image: url("../image/cat.jpg"),
+    radial-gradient(rgb(229, 237, 219) 50%, rgb(234, 162, 202) 80%);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
