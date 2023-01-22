@@ -1,0 +1,14 @@
+.container {
+  height: 200vh;
+}
+
+.block {
+  position: fixed;
+  width: calc(50% - 50px);
+  bottom: 100px;
+  right: 50px;
+  height: 400px;
+  box-shadow: inset 0px 0px 20px #000;
+  border-radius: 35px;
+  background-color: rgb(248, 138, 228);
+}
