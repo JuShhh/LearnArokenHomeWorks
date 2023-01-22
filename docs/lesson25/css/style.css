@@ -1,0 +1,13 @@
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.block {
+  height: 200px;
+  width: 200px;
+  box-shadow: inset 0px 0px 20px #000;
+  border-radius: 35px;
+  background-color: rgb(248, 138, 228);
+  transform: translateX(10vw) rotate(-30deg);
+}
