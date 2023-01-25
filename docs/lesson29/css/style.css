@@ -1,0 +1,28 @@
+.wrapper {
+  height: 100vh;
+  background-color: rgba(99, 168, 202, 0.634);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  width: 50%;
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  grid-template-columns: repeat(2, 1fr) minmax(100px, 200px) repeat(2, 1fr);
+}
+
+.grid__item {
+  text-align: center;
+  padding: 10px;
+  border: 2px dashed rgb(30, 17, 97);
+  background-color: rgb(197, 221, 238);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
