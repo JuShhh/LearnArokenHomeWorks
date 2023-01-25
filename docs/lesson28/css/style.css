@@ -1,0 +1,28 @@
+.wrapper {
+  height: 100vh;
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexbox {
+  width: 90%;
+  height: 40%;
+  border: 15px solid rgb(89, 60, 60);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flexbox__item {
+  height: 80%;
+  width: 15%;
+  color: rgba(10, 8, 6, 0.677);
+  font-size: 50px;
+  font-weight: 600;
+  background-color: rgb(158, 119, 119);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
