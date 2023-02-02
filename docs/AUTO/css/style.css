@@ -32,25 +32,15 @@ body {
 .button:hover {
   transform: scale(1.05);
 }
-
-/* .logo {
+/* .logo{
 } */
 
 /* ============================================================================ */
 
 .header {
   font-weight: 600;
-  height: 100vh;
-}
-.header__body {
-  width: 100%;
-  margin: 80px 0 135px;
-}
-
-.header__body-inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  /* display: flex;
+  flex-direction: column; */
 }
 
 .header__top-inner {
@@ -107,6 +97,17 @@ body {
 }
 
 /* ------------------------------------------------------------------------------------------ */
+
+.header__body {
+  width: 100%;
+  margin: 80px 0 135px;
+}
+
+.header__body-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 .header__content-left {
   margin-right: 30px;
@@ -229,4 +230,91 @@ body {
 
 .header__stars {
   margin-right: 32px;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+
+.main {
+  font-weight: 600;
+}
+
+.main__offer {
+  padding: 128px 0;
+}
+
+.offer {
+  background: #f2f2f2;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.03em;
+}
+.offer__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.offer__heading {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.offer__title {
+  text-align: center;
+  font-weight: 800;
+  font-size: 58px;
+  line-height: 76px;
+  max-width: 858px;
+  letter-spacing: -0.03em;
+}
+
+.offer__box {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr;
+  width: 100%;
+}
+
+.offer__item {
+  background-color: #ffffff;
+  margin: 0 0 8px 8px;
+  height: 232px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: all 0.3s;
+}
+
+.offer__item:hover {
+  background-color: #ff6433;
+  color: #fff;
+}
+
+.offer__item:hover svg {
+  fill: #fff;
+}
+
+.offer__img svg {
+  display: flex;
+  align-self: flex-end;
+  fill: #1e1b1b;
+}
+.offer__text {
+  margin-top: 13px;
+}
+.offer__learn-about {
+  margin-top: 24px;
+  display: flex;
+  align-self: flex-end;
+  transition: all 0.3s;
+}
+.offer__learn-about:hover {
+  transform: scale(1.03);
+  color: #ff6433;
+}
+
+.offer__learn-about--text {
+  font-size: 18px;
+  line-height: 175%;
+  margin-right: 16px;
 }
