@@ -77,9 +77,11 @@ h2 {
 .header__nav {
   margin-left: auto;
 }
+
 .header__nav-list {
   display: flex;
 }
+
 .header__nav-item {
   margin-right: 40px;
 }
@@ -97,6 +99,7 @@ h2 {
 .header__nav-link:hover {
   color: #ff6433;
 }
+
 .header__line {
   margin: 0 32px;
 }
@@ -106,6 +109,7 @@ h2 {
   align-items: center;
   white-space: nowrap;
 }
+
 .header__assistance-img {
   margin-right: 14px;
 }
@@ -115,6 +119,7 @@ h2 {
   font-weight: 500;
   line-height: 24px;
 }
+
 .header__assistance-text-2 {
   font-size: 18px;
   line-height: 175%;
@@ -136,6 +141,7 @@ h2 {
 .header__content-left {
   margin-right: 30px;
 }
+
 .header__title {
   margin-bottom: 32px;
   font-weight: 800;
@@ -144,14 +150,17 @@ h2 {
   line-height: 84px;
   max-width: 624px;
 }
+
 .header__content-buttons {
   margin-bottom: 48px;
   display: flex;
   align-items: center;
 }
+
 .header__button {
   margin-right: 33px;
 }
+
 .header__play {
   display: flex;
   align-items: center;
@@ -161,18 +170,22 @@ h2 {
   line-height: 19px;
   white-space: nowrap;
 }
+
 .header__play-img {
   margin-right: 8px;
   border-radius: 50%;
   transition: all 0.3s;
 }
+
 .header__play-img:hover {
   box-shadow: 0 0 0 8px rgba(29, 27, 27, 0.134);
 }
+
 .header__time {
   display: flex;
   align-items: center;
 }
+
 .header__time-img {
   padding-right: 13.05px;
 }
@@ -182,10 +195,12 @@ h2 {
   font-weight: 500;
   line-height: 24px;
 }
+
 .header__time-text-2 {
   font-size: 18px;
   line-height: 175%;
 }
+
 .header__content-right {
   position: relative;
 }
@@ -264,6 +279,7 @@ h2 {
   line-height: 36px;
   letter-spacing: -0.03em;
 }
+
 .offer__inner {
   display: flex;
   flex-direction: column;
@@ -310,9 +326,11 @@ h2 {
   align-self: flex-end;
   fill: #1e1b1b;
 }
+
 .offer__text {
   margin-top: 13px;
 }
+
 .offer__learn-about {
   margin-top: 24px;
   display: flex;
@@ -340,9 +358,11 @@ h2 {
   display: flex;
   margin-bottom: 46px;
 }
+
 .blog__filter-item {
   margin-right: 30px;
 }
+
 .blog__filter-item:last-child {
   margin-right: 0;
 }
@@ -367,6 +387,7 @@ h2 {
   grid-template: repeat(2, auto) / repeat(3, 1fr);
   gap: 64px 32px;
 }
+
 .blog__list-link {
   max-width: 405px;
   display: block;
@@ -383,9 +404,11 @@ h2 {
   width: 100%;
   height: 100%;
 }
+
 .blog__link-content {
   margin-top: 24px;
 }
+
 .blog__link-subtitle {
   line-height: 175%;
   color: #939191;
@@ -398,12 +421,14 @@ h2 {
   line-height: 150%;
   letter-spacing: -0.03em;
 }
+
 .blog__link-paragraph {
   line-height: 175%;
   color: #232536;
 }
 
 /*=====================================================================================================*/
+
 .procces__inner {
   display: flex;
 }
@@ -420,17 +445,20 @@ h2 {
 }
 
 .process__content-right {
-max-width: 432px;
-display: flex;
-flex-direction: column;
+  max-width: 432px;
+  display: flex;
+  flex-direction: column;
 }
+
 .process__item {
   margin-bottom: 16px;
   display: flex;
 }
+
 .process__item:last-child {
-  margin-bottom: 0
+  margin-bottom: 0;
 }
+
 .process__decor {
   display: flex;
   flex-direction: column;
@@ -450,6 +478,7 @@ flex-direction: column;
   letter-spacing: -0.03em;
   margin-bottom: 8px;
 }
+
 .process__text-subtitle {
   font-size: 18px;
   line-height: 175%;
