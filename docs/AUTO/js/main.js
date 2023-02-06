@@ -8,3 +8,12 @@ $(function () {
 
   $(".header__stars").rateYo("option", "normalFill", "#D7D1C7");
 });
+
+$(function () {
+  var mixer = mixitup(".blog__list");
+
+  $(".blog__filter-btn").on("click", function () {
+    $(".blog__filter-btn").removeClass("blog__filter-btn--active");
+    $(this).addClass("blog__filter-btn--active");
+  });
+});
