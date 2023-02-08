@@ -17,3 +17,23 @@ $(function () {
     $(this).addClass("blog__filter-btn--active");
   });
 });
+
+$(function () {
+  $(".testimonials__slider").slick({
+    arrows: false,
+    infinite: true,
+    dots: true,
+    slidesToShow: 2,
+    draggable: false,
+    waitForAnimate: false,
+  });
+
+  $(".testimonials__slider-prev").on("click", function (e) {
+    e.preventDefault();
+    $(".testimonials__slider").slick("slickPrev");
+  });
+  $(".testimonials__slider-next").on("click", function (e) {
+    e.preventDefault();
+    $(".testimonials__slider").slick("slickNext");
+  });
+});
