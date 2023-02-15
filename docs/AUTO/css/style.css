@@ -904,3 +904,19 @@ h2 {
 .qustions__accordeon-link--active .questions__head-btn::after {
   transform: rotate(0deg);
 }
+
+/*======================================== L O C A T I O N ==================================================*/
+/*======================================== L O C A T I O N ==================================================*/
+
+.map {
+  filter: grayscale(100%);
+}
+
+.location__img {
+  background: url("../images/image/foo.svg") 0 0 / 100%, no-repeat;
+  width: 100%;
+  height: 448px;
+  background-size: cover;
+  background-position: center;
+  margin-top: -170px;
+}
