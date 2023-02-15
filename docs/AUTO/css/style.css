@@ -25,7 +25,9 @@ body {
   font-weight: 600;
 }
 
-.main__offer {
+.main__offer,
+.main__testimonials,
+.main__questions {
   padding: 128px 0;
 }
 
@@ -43,10 +45,6 @@ body {
 
 .main__blog {
   padding: 131px 0 136px;
-}
-
-.main__testimonials {
-  padding: 128px 0;
 }
 
 .button {
@@ -824,6 +822,85 @@ h2 {
 }
 
 .testimonials__slider .slick-active button::before {
-  background-color: #FF6433;
-  transition: all .3s;
+  background-color: #ff6433;
+  transition: all 0.3s;
+}
+
+/*======================================== Q U E S T I O N S ==================================================*/
+/*======================================== Q U E S T I O N S ==================================================*/
+
+.questions {
+  background-color: #e2e6e9;
+}
+
+.questions__title {
+  text-align: center;
+  margin-bottom: 86px;
+}
+
+.qustions__accordeon {
+  max-width: 896px;
+  margin: 0 auto;
+}
+
+.qustions__accordeon-item {
+  background-color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.qustions__accordeon-link {
+  padding: 40px;
+  display: block;
+}
+
+.qustions__accordeon-item:last-child {
+  margin-bottom: 120;
+}
+
+.qustions__accordeon-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.questions__head-title {
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: -0.03em;
+}
+
+.questions__head-btn {
+  background-color: #ff6433;
+  width: 51.08px;
+  height: 48px;
+  position: relative;
+}
+
+.questions__head-btn::before,
+.questions__head-btn::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 34%;
+  width: 17.03px;
+  height: 2px;
+  background-color: #fff;
+  border-radius: 1px;
+}
+
+.questions__head-btn::after {
+  transform: rotate(90deg);
+  transition: all 0.3s;
+}
+
+.qustions__accordeon-text {
+  max-width: 680px;
+  margin-top: 16px;
+  font-size: 18px;
+  line-height: 175%;
+  color: #939191;
+}
+
+.qustions__accordeon-link--active .questions__head-btn::after {
+  transform: rotate(0deg);
 }

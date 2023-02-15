@@ -37,3 +37,21 @@ $(function () {
     $(".testimonials__slider").slick("slickNext");
   });
 });
+
+$(function () {
+  $(".qustions__accordeon-link").on("click", function (e) {
+    e.preventDefault();
+    if ($(this).hasClass("qustions__accordeon-link--active")) {
+      $(this).removeClass("qustions__accordeon-link--active");
+      $(this).children(".qustions__accordeon-text").slideUp();
+    } else {
+      $(".qustions__accordeon-link").removeClass(
+        "qustions__accordeon-link--active"
+      );
+      $(".qustions__accordeon-text").slideUp();
+
+      $(this).addClass("qustions__accordeon-link--active");
+      $(this).children(".qustions__accordeon-text").slideDown();
+    }
+  });
+});
