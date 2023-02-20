@@ -14,7 +14,7 @@ body {
 }
 
 .container {
-  max-width: 1330px;
+  max-width: 1310px;
   padding: 0 15px;
   margin: 0 auto;
   height: 100%;
@@ -45,6 +45,10 @@ body {
 
 .main__blog {
   padding: 131px 0 136px;
+}
+
+.main__connection {
+  padding: 121px 0 178px;
 }
 
 .button {
@@ -919,4 +923,94 @@ h2 {
   background-size: cover;
   background-position: center;
   margin-top: -170px;
+}
+
+/*======================================== C O N N E C T I O N ==================================================*/
+/*======================================== C O N N E C T I O N ==================================================*/
+
+.connection__inner {
+  display: flex;
+  align-items: center;
+}
+
+.connection__content {
+  width: 626px;
+  margin-right: 139px;
+}
+
+.connection__title {
+  font-size: 64px;
+  line-height: 131%;
+  letter-spacing: -0.03em;
+  max-width: 503px;
+}
+
+.connection__form {
+  margin: 48px 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.connection__item {
+  background-color: #f2f2f2;
+  border-radius: 2px;
+  margin-bottom: 4px;
+  padding: 23px 40px;
+  color: #1e1b1b;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 175%;
+}
+
+.service__item-def {
+  display: none;
+}
+
+.connection__item:last-child {
+  margin-bottom: 0;
+}
+
+.connection__service {
+  appearance: none;
+  color: #ff6433;
+  cursor: pointer;
+  font-family: Manrope, sans-serif;
+}
+
+.service__item {
+  color: #1e1b1b;
+}
+
+.connection__message {
+  resize: none;
+  height: 74px;
+}
+
+.connection__btn {
+  max-width: 206px;
+  margin-top: 48px;
+}
+
+.connection__info {
+  margin-top: 100px;
+}
+
+.connection__info-item {
+  margin-bottom: 32px;
+}
+
+.connection__info-item:last-child {
+  margin-bottom: 0;
+}
+
+.connection__info-title {
+  line-height: 175%;
+  opacity: 0.7;
+  margin-bottom: 2px;
+}
+
+.connection__info-text {
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: -0.03em;
 }
