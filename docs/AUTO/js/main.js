@@ -39,19 +39,29 @@ $(function () {
 });
 
 $(function () {
-  $(".qustions__accordeon-link").on("click", function (e) {
+  $(".questions__accordeon-link").on("click", function (e) {
     e.preventDefault();
-    if ($(this).hasClass("qustions__accordeon-link--active")) {
-      $(this).removeClass("qustions__accordeon-link--active");
-      $(this).children(".qustions__accordeon-text").slideUp();
+    if ($(this).hasClass("questions__accordeon-link--active")) {
+      $(this).removeClass("questions__accordeon-link--active");
+      $(this).children(".questions__accordeon-text").slideUp();
     } else {
-      $(".qustions__accordeon-link").removeClass(
-        "qustions__accordeon-link--active"
+      $(".questions__accordeon-link").removeClass(
+        "questions__accordeon-link--active"
       );
-      $(".qustions__accordeon-text").slideUp();
+      $(".questions__accordeon-text").slideUp();
 
-      $(this).addClass("qustions__accordeon-link--active");
-      $(this).children(".qustions__accordeon-text").slideDown();
+      $(this).addClass("questions__accordeon-link--active");
+      $(this).children(".questions__accordeon-text").slideDown();
     }
   });
+});
+
+$(function () {
+  $(".header__nav-list a, .header__button, .process__btn, .cta__btn, .footer__bottom-logo, .footer__bottom-nav--link").on("click", function(e) {
+    e.preventDefault()
+    var id  = $(this).attr('href'),
+    top = $(id).offset().top + 100
+    $('body,html').animate({ scrollTop: top }, 1500)
+  })
+  
 });
