@@ -57,11 +57,31 @@ $(function () {
 });
 
 $(function () {
-  $(".header__nav-list a, .header__button, .process__btn, .cta__btn, .footer__bottom-logo, .footer__bottom-nav--link").on("click", function(e) {
-    e.preventDefault()
-    var id  = $(this).attr('href'),
-    top = $(id).offset().top + 100
-    $('body,html').animate({ scrollTop: top }, 1500)
-  })
-  
+  $(
+    ".header__nav-list a, .header__button, .process__btn, .cta__btn, .footer__bottom-logo, .footer__bottom-nav--link"
+  ).on("click", function (e) {
+    e.preventDefault();
+    var id = $(this).attr("href"),
+      top = $(id).offset().top + 100;
+    $("body,html").animate({ scrollTop: top }, 1500);
+  });
+});
+
+$(function () {
+  setInterval(() => {
+    if (
+      $(window).scrollTop() > 0 &&
+      $(".header__top").hasClass("header__top--open") === false
+    ) {
+      $(".burger").addClass("burger--follow");
+    } else {
+      $(".burger").removeClass("burger--follow");
+    }
+  }, 0);
+  $(".burger,.overlay").on("click", function (e) {
+    e.preventDefault();
+    $(".header__top").toggleClass("header__top--open");
+    $(".overlay").toggleClass("overlay--show");
+    $(".burger").toggleClass("open");
+  });
 });
