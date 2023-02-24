@@ -54,7 +54,7 @@ body {
   padding: 128px 0;
 }
 
-.main__procces {
+.main__process {
   padding: 134px 0;
 }
 
@@ -473,7 +473,7 @@ h2 {
 /*======================================== P R O C C E S ==================================================*/
 /*======================================== P R O C C E S ==================================================*/
 
-.procces__inner {
+.process__inner {
   display: flex;
 }
 .process__content-left {
@@ -660,7 +660,7 @@ h2 {
 }
 
 .brandes__image--7:hover {
-  fill: rgb(69, 153, 85);
+  fill: rgb(70, 153, 85);
 }
 
 .brandes__image--8:hover {
@@ -1218,6 +1218,62 @@ h2 {
     width: 60px;
     padding: 0;
   }
+
+  /*---------------------------------------- process ------------------------------------------------*/
+  .process__title,
+  .cta__content p {
+    font-size: 48px;
+    line-height: 110%;
+  }
+
+  .process__item {
+    margin-bottom: 12px;
+  }
+
+  .process__decor {
+    margin-right: 15px;
+  }
+
+  .process__decor-img img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .process__decor-line img {
+    margin-top: 12px;
+    height: 65px;
+  }
+
+  .process__text {
+    margin-top: 10px;
+  }
+
+  .process__text-title {
+    font-size: 28px;
+    margin-bottom: 5px;
+  }
+
+  .process__text-subtitle {
+    font-size: 16px;
+  }
+}
+
+/*======================================== 1100px ==================================================*/
+@media (max-width: 1100px) {
+  /*---------------------------------------- process ------------------------------------------------*/
+
+  .process__content-left {
+    margin-right: 50px;
+  }
+  /*---------------------------------------- experience ------------------------------------------------*/
+
+  .experience__number {
+    font-size: 54px;
+  }
+
+  .experience__text {
+    font-size: 22px;
+  }
 }
 
 /*======================================== 1000px ==================================================*/
@@ -1281,6 +1337,21 @@ h2 {
     margin-right: 7px;
     width: 52px;
   }
+
+  /*---------------------------------------- process ------------------------------------------------*/
+  .process__content-left {
+    margin-right: 45px;
+  }
+  .process__title {
+    font-size: 39px;
+    max-width: 440px;
+  }
+}
+/*---------------------------------------- cta ------------------------------------------------*/
+
+.cta__content p {
+  font-size: 39px;
+  max-width: 352px;
 }
 
 /*======================================== 900px ==================================================*/
@@ -1406,6 +1477,26 @@ h2 {
   .header__assistance-text-1 {
     margin-bottom: 5px;
   }
+
+  /*---------------------------------------- process ------------------------------------------------*/
+  .process__decor-img img {
+    width: 62px;
+    height: 62px;
+  }
+
+  .process__text {
+    margin-top: 5px;
+  }
+
+  .process__item {
+    margin-bottom: 9px;
+  }
+
+  /*---------------------------------------- experience ------------------------------------------------*/
+
+  .experience__number {
+    font-size: 50px;
+  }
 }
 
 /*======================================== 850px ==================================================*/
@@ -1449,6 +1540,41 @@ h2 {
     margin-right: 7px;
     width: 50px;
   }
+
+  /*---------------------------------------- process ------------------------------------------------*/
+  .process__decor-img img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .process__text-title {
+    font-size: 22px;
+    margin-bottom: 2px;
+  }
+
+  .process__text-subtitle {
+    font-size: 14px;
+  }
+
+  /*---------------------------------------- cta ------------------------------------------------*/
+
+  .cta__content p {
+    font-size: 35px;
+  }
+
+  .cta__content {
+    padding: 130px 70px;
+  }
+
+  /*---------------------------------------- experience ------------------------------------------------*/
+
+  .main__experience {
+    padding: 46px 12px;
+  }
+
+  .experience__text {
+    font-size: 19px;
+  }
 }
 
 /*======================================== 700px ==================================================*/
@@ -1489,7 +1615,142 @@ h2 {
   .header__service-img {
     width: 42px;
   }
+
+  /*---------------------------------------- process ------------------------------------------------*/
+
+  .main__process {
+    padding: 100px 0;
+  }
+
+  .process__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .process__content-left {
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .process__title,
+  .process__paragraph,
+  .process__text-subtitle {
+    text-align: center;
+  }
+
+  .process__paragraph {
+    margin: 20px 0 25px;
+  }
+
+  .process__item {
+    display: block;
+    margin-top: 28px;
+    margin-bottom: 0;
+  }
+
+  .process__decor {
+    margin-right: 0;
+  }
+
+  .process__decor-line img {
+    display: none;
+  }
+
+  .process__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /*---------------------------------------- cta ------------------------------------------------*/
+  .cta__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .cta__box {
+    width: 60%;
+  }
+
+  .cta__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 120px 50px;
+  }
+
+  .cta__content p {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  /*---------------------------------------- experience ------------------------------------------------*/
+.experience__item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+  .experience__number {
+    font-size: 40px;
+  }
+
+  .experience__text {
+    font-size: 15px;
+  }
+}
+
+/*======================================== 600px ==================================================*/
+@media (max-width: 600px) {
+  .cta__content {
+    padding: 110px 28px;
+  }
+
+  .cta__content p {
+    font-size: 27px;
+    text-align: center;
+  }
+
+  
+  /*---------------------------------------- experience ------------------------------------------------*/
+  .experience__list {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    grid-row-gap: 10px;
+  }
+
+
+  .experience__text {
+    font-size: 17px;
+  }
+
+}
+
+/*======================================== 500px ==================================================*/
+@media (max-width: 500px) {
+  /*---------------------------------------- process ------------------------------------------------*/
+  .process__title {
+    max-width: 350px;
+    font-size: 35px;
+  }
+
+  .process__paragraph {
+    max-width: 88%;
+  }
+
+  /*---------------------------------------- cta ------------------------------------------------*/
+
+  .cta__content p {
+    font-size: 26px;
+  }
+
+  .cta__content {
+    padding: 90px 18px;
+  }
+}
+
 /*======================================== 400px ==================================================*/
 
 @media (max-width: 400px) {
@@ -1565,5 +1826,47 @@ h2 {
   .jq-ry-group svg {
     width: 19px;
     height: 19px;
+  }
+
+  /*---------------------------------------- process ------------------------------------------------*/
+  .process__title {
+    font-size: 32px;
+  }
+
+  .process__paragraph {
+    font-size: 14px;
+  }
+
+  .process__text-title {
+    font-size: 18px;
+  }
+
+  .process__text-subtitle {
+    max-width: 90%;
+    font-size: 13px;
+  }
+
+  .process__decor-img img {
+    width: 58px;
+    height: 58px;
+  }
+
+  /*---------------------------------------- cta ------------------------------------------------*/
+
+  .cta__content p {
+    font-size: 25px;
+  }
+
+  .cta__content {
+    padding: 90px 16px;
+  }
+
+  /*---------------------------------------- experience ------------------------------------------------*/
+  .experience__number {
+    font-size: 38px;
+  }
+
+  .experience__text {
+    font-size: 14px;
   }
 }
