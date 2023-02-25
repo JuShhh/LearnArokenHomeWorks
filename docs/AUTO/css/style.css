@@ -1221,7 +1221,8 @@ h2 {
 
   /*---------------------------------------- process ------------------------------------------------*/
   .process__title,
-  .cta__content p {
+  .cta__content p,
+  .blog__title {
     font-size: 48px;
     line-height: 110%;
   }
@@ -1255,6 +1256,12 @@ h2 {
 
   .process__text-subtitle {
     font-size: 16px;
+  }
+
+  /*---------------------------------------- blog ------------------------------------------------*/
+
+  .blog__filter-btn {
+    font-size: 30px;
   }
 }
 
@@ -1346,12 +1353,35 @@ h2 {
     font-size: 39px;
     max-width: 440px;
   }
-}
-/*---------------------------------------- cta ------------------------------------------------*/
+  /*---------------------------------------- cta ------------------------------------------------*/
 
-.cta__content p {
-  font-size: 39px;
-  max-width: 352px;
+  .cta__content p {
+    font-size: 39px;
+    max-width: 352px;
+  }
+
+  /*---------------------------------------- blog ------------------------------------------------*/
+
+  .main__blog {
+    padding: 100px 0 125px;
+  }
+
+  .blog__title {
+    font-size: 39px;
+    margin-bottom: 40px;
+  }
+
+  .blog__filter-box {
+    margin-bottom: 37px;
+  }
+
+  .blog__filter-btn {
+    font-size: 27px;
+  }
+
+  .blog__link-title {
+    font-size: 28px;
+  }
 }
 
 /*======================================== 900px ==================================================*/
@@ -1575,6 +1605,39 @@ h2 {
   .experience__text {
     font-size: 19px;
   }
+
+  /*---------------------------------------- blog ------------------------------------------------*/
+
+  .blog__list {
+    gap: 55px 27px;
+  }
+
+  .blog__title {
+    font-size: 37px;
+    margin-bottom: 33px;
+  }
+
+  .blog__filter-box {
+    margin-bottom: 26px;
+  }
+
+  .blog__link-content {
+    margin-top: 20px;
+  }
+
+  .blog__filter-btn {
+    font-size: 25px;
+  }
+
+  .blog__link-title {
+    font-size: 25px;
+    margin: 14px 0;
+  }
+
+  .blog__link-subtitle,
+  .blog__link-paragraph {
+    font-size: 14px;
+  }
 }
 
 /*======================================== 700px ==================================================*/
@@ -1646,7 +1709,7 @@ h2 {
 
   .process__item {
     display: block;
-    margin-top: 28px;
+    margin-top: 29px;
     margin-bottom: 0;
   }
 
@@ -1688,17 +1751,71 @@ h2 {
   }
 
   /*---------------------------------------- experience ------------------------------------------------*/
-.experience__item{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  .experience__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .experience__number {
     font-size: 40px;
   }
 
   .experience__text {
     font-size: 15px;
+  }
+
+  /*---------------------------------------- blog ------------------------------------------------*/
+
+  .main__blog {
+    padding: 80px 0;
+  }
+
+  .blog__title {
+    margin-bottom: 22px;
+    text-align: center;
+  }
+
+  .blog__filter-box {
+    margin: 0px 60px 20px 60px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .blog__filter-item {
+    margin: 0;
+  }
+
+  .blog__filter-btn {
+    font-size: 21px;
+  }
+
+  .blog__list {
+    grid-template: repeat(3, auto) / repeat(2, 1fr);
+    gap: 40px 22px;
+  }
+
+  .blog__link-content {
+    margin-top: 17px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .blog__link-title {
+    font-size: 21px;
+    margin: 10px 0;
+    text-align: center;
+    max-width: 299px;
+  }
+
+  .blog__link-subtitle,
+  .blog__link-paragraph {
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .blog__link-paragraph {
+    max-width: 288px;
   }
 }
 
@@ -1713,7 +1830,6 @@ h2 {
     text-align: center;
   }
 
-  
   /*---------------------------------------- experience ------------------------------------------------*/
   .experience__list {
     display: grid;
@@ -1721,11 +1837,21 @@ h2 {
     grid-row-gap: 10px;
   }
 
-
   .experience__text {
     font-size: 17px;
   }
 
+  /*---------------------------------------- blog ------------------------------------------------*/
+  .blog__link-title {
+    max-width: 223px;
+  }
+  .blog__link-paragraph {
+    max-width: 207px;
+  }
+
+  .blog__filter-box {
+    margin: 0px 40px 20px 40px;
+  }
 }
 
 /*======================================== 500px ==================================================*/
@@ -1748,6 +1874,33 @@ h2 {
 
   .cta__content {
     padding: 90px 18px;
+  }
+
+  /*---------------------------------------- blog ------------------------------------------------*/
+
+  .blog__filter-box {
+    margin: 0px 20px 20px;
+  }
+
+  .blog__filter-item {
+    margin: 0;
+  }
+
+  .blog__filter-btn {
+    font-size: 20px;
+  }
+
+  .blog__list {
+    gap: 34px 18px;
+  }
+
+  .blog__link-title {
+    max-width: 181px;
+    font-size: 18px;
+  }
+
+  .blog__link-paragraph {
+    max-width: 176px;
   }
 }
 
@@ -1829,7 +1982,8 @@ h2 {
   }
 
   /*---------------------------------------- process ------------------------------------------------*/
-  .process__title {
+  .process__title,
+  .blog__title {
     font-size: 32px;
   }
 
@@ -1868,5 +2022,33 @@ h2 {
 
   .experience__text {
     font-size: 14px;
+  }
+
+  /*---------------------------------------- blog ------------------------------------------------*/
+
+  .blog__filter-btn {
+    font-size: 18px;
+  }
+
+  .blog__list {
+    grid-template: repeat(6, auto) / 1fr;
+    gap: 34px 0;
+  }
+
+  .blog__link-content {
+    margin-top: 15px;
+  }
+
+  .blog__link-title {
+    width: 81%;
+    max-width: fit-content;
+    margin: 8px 0;
+  }
+
+  .blog__link-subtitle,
+  .blog__link-paragraph {
+    width: 81%;
+    max-width: fit-content;
+    font-size: 13px;
   }
 }
