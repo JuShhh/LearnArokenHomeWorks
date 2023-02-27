@@ -378,7 +378,9 @@ h2 {
   display: flex;
   align-self: flex-end;
   transition: all 0.3s;
+  align-items: center;
 }
+
 .offer__learn-about:hover {
   transform: scale(1.03);
   color: #ff6433;
@@ -1219,13 +1221,22 @@ h2 {
     padding: 0;
   }
 
-  /*---------------------------------------- process ------------------------------------------------*/
+  /*---------------------------------------- offer ------------------------------------------------*/
+
+  .offer__title,
   .process__title,
   .cta__content p,
+  .brands__title,
   .blog__title {
     font-size: 48px;
     line-height: 110%;
   }
+
+  .offer__text {
+    font-size: 22px;
+    line-height: 33px;
+  }
+  /*---------------------------------------- process ------------------------------------------------*/
 
   .process__item {
     margin-bottom: 12px;
@@ -1280,6 +1291,12 @@ h2 {
 
   .experience__text {
     font-size: 22px;
+  }
+
+  /*---------------------------------------- brands ------------------------------------------------*/
+
+  .brands__block {
+    margin-bottom: 0px;
   }
 }
 
@@ -1345,6 +1362,16 @@ h2 {
     width: 52px;
   }
 
+  /*---------------------------------------- offer ------------------------------------------------*/
+
+  .offer__title {
+    font-size: 39px;
+    max-width: 516px;
+  }
+
+  .offer__box {
+    gap: 7px;
+  }
   /*---------------------------------------- process ------------------------------------------------*/
   .process__content-left {
     margin-right: 45px;
@@ -1358,6 +1385,16 @@ h2 {
   .cta__content p {
     font-size: 39px;
     max-width: 352px;
+  }
+
+  /*---------------------------------------- brands ------------------------------------------------*/
+
+  .main__brands {
+    padding: 100px 70px;
+  }
+
+  .brands__title {
+    font-size: 39px;
   }
 
   /*---------------------------------------- blog ------------------------------------------------*/
@@ -1508,6 +1545,17 @@ h2 {
     margin-bottom: 5px;
   }
 
+  /*---------------------------------------- offer ------------------------------------------------*/
+
+  .offer__subtitle {
+    font-size: 22px;
+    line-height: 34px;
+  }
+
+  .offer__text {
+    font-size: 18px;
+    line-height: 30px;
+  }
   /*---------------------------------------- process ------------------------------------------------*/
   .process__decor-img img {
     width: 62px;
@@ -1526,6 +1574,16 @@ h2 {
 
   .experience__number {
     font-size: 50px;
+  }
+
+  /*---------------------------------------- brands ------------------------------------------------*/
+
+  .brands__title {
+    margin-bottom: 0;
+  }
+
+  .brands__block {
+    margin-bottom: -35px;
   }
 }
 
@@ -1679,11 +1737,34 @@ h2 {
     width: 42px;
   }
 
-  /*---------------------------------------- process ------------------------------------------------*/
+  /*---------------------------------------- offer ------------------------------------------------*/
 
+  .main__offer,
   .main__process {
     padding: 100px 0;
   }
+
+  .offer__box {
+    grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr;
+    width: 96%;
+    gap: 10px;
+  }
+
+  .offer__item {
+    margin: 0;
+    max-height: 210px;
+  }
+
+  .offer__text {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .offer__learn-about {
+    align-self: center;
+  }
+  /*---------------------------------------- process ------------------------------------------------*/
 
   .process__inner {
     flex-direction: column;
@@ -1764,6 +1845,23 @@ h2 {
     font-size: 15px;
   }
 
+  /*---------------------------------------- brands ------------------------------------------------*/
+
+  .main__brands {
+    padding: 40px 10px;
+  }
+
+  .brands__title {
+    margin-bottom: -20px;
+  }
+
+  .brands__block {
+    margin-bottom: -65px;
+  }
+
+  .brands__block:last-child {
+    margin-bottom: -30px;
+  }
   /*---------------------------------------- blog ------------------------------------------------*/
 
   .main__blog {
@@ -1821,6 +1919,18 @@ h2 {
 
 /*======================================== 600px ==================================================*/
 @media (max-width: 600px) {
+  /*---------------------------------------- offer ------------------------------------------------*/
+
+  .offer__heading {
+    margin-bottom: 48px;
+  }
+
+  .offer__title {
+    max-width: 446px;
+  }
+
+  /*---------------------------------------- cta ------------------------------------------------*/
+
   .cta__content {
     padding: 110px 28px;
   }
@@ -1842,9 +1952,11 @@ h2 {
   }
 
   /*---------------------------------------- blog ------------------------------------------------*/
+
   .blog__link-title {
     max-width: 223px;
   }
+
   .blog__link-paragraph {
     max-width: 207px;
   }
@@ -1856,6 +1968,28 @@ h2 {
 
 /*======================================== 500px ==================================================*/
 @media (max-width: 500px) {
+  /*---------------------------------------- offer ------------------------------------------------*/
+
+  .offer__heading {
+    margin-bottom: 38px;
+  }
+
+  .offer__title {
+    font-size: 35px;
+  }
+
+  .offer__subtitle {
+    font-size: 20px;
+  }
+
+  .offer__learn-about--text {
+    font-size: 16px;
+  }
+
+  .offer__learn-about--img svg {
+    display: inline-block;
+    width: 40px;
+  }
   /*---------------------------------------- process ------------------------------------------------*/
   .process__title {
     max-width: 350px;
@@ -1876,7 +2010,29 @@ h2 {
     padding: 90px 18px;
   }
 
+  /*---------------------------------------- brands ------------------------------------------------*/
+
+  .main__brands {
+    padding: 80px 0 100px;
+  }
+
+  .brands__title {
+    margin-bottom: 25px;
+  }
+
+  .brands__block {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .brands__block svg {
+    margin: -25px 0;
+  }
+
   /*---------------------------------------- blog ------------------------------------------------*/
+  .blog__title {
+    font-size: 35px;
+  }
 
   .blog__filter-box {
     margin: 0px 20px 20px;
@@ -1907,6 +2063,11 @@ h2 {
 /*======================================== 400px ==================================================*/
 
 @media (max-width: 400px) {
+  /* --------------------- offer ------------------ */
+  .offer__title {
+    font-size: 32px;
+  }
+
   /*---------------------------------------- header-top ------------------------------------------------*/
 
   .header__body {
@@ -1983,7 +2144,8 @@ h2 {
 
   /*---------------------------------------- process ------------------------------------------------*/
   .process__title,
-  .blog__title {
+  .blog__title,
+  .brands__title {
     font-size: 32px;
   }
 
@@ -2024,6 +2186,11 @@ h2 {
     font-size: 14px;
   }
 
+  /*---------------------------------------- brands ------------------------------------------------*/
+
+  .brands__block svg {
+    margin: -30px 0;
+  }
   /*---------------------------------------- blog ------------------------------------------------*/
 
   .blog__filter-btn {
