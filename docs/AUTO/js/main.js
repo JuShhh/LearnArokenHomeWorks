@@ -26,6 +26,14 @@ $(function () {
     slidesToShow: 2,
     draggable: false,
     waitForAnimate: false,
+    responsive: [
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   });
 
   $(".testimonials__slider-prev").on("click", function (e) {

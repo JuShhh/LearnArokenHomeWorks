@@ -1227,7 +1227,8 @@ h2 {
   .process__title,
   .cta__content p,
   .brands__title,
-  .blog__title {
+  .blog__title,
+  .testimonials__title {
     font-size: 48px;
     line-height: 110%;
   }
@@ -1236,6 +1237,7 @@ h2 {
     font-size: 22px;
     line-height: 33px;
   }
+
   /*---------------------------------------- process ------------------------------------------------*/
 
   .process__item {
@@ -1273,6 +1275,16 @@ h2 {
 
   .blog__filter-btn {
     font-size: 30px;
+  }
+
+  /*---------------------------------------- testimonials ------------------------------------------------*/
+
+  .testimonials__title {
+    max-width: 800px;
+  }
+
+  .testimonials__slide {
+    padding: 0 17px;
   }
 }
 
@@ -1403,7 +1415,8 @@ h2 {
     padding: 100px 0 125px;
   }
 
-  .blog__title {
+  .blog__title,
+  .testimonials__title {
     font-size: 39px;
     margin-bottom: 40px;
   }
@@ -1418,6 +1431,40 @@ h2 {
 
   .blog__link-title {
     font-size: 28px;
+  }
+
+  /*---------------------------------------- testimonials ------------------------------------------------*/
+
+  .testimonials__slide-inner {
+    padding: 60px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonials__title {
+    max-width: 649px;
+  }
+
+  .testimonials__person {
+    flex-direction: column;
+    margin-bottom: 14px;
+  }
+
+  .testimonials__img-box {
+    margin-right: 0;
+  }
+
+  .testimonials__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonials__text {
+    font-size: 21px;
+    line-height: 140%;
+    text-align: center;
   }
 }
 
@@ -1671,7 +1718,6 @@ h2 {
   }
 
   .blog__title {
-    font-size: 37px;
     margin-bottom: 33px;
   }
 
@@ -1695,6 +1741,27 @@ h2 {
   .blog__link-subtitle,
   .blog__link-paragraph {
     font-size: 14px;
+  }
+
+  /*---------------------------------------- testimonials ------------------------------------------------*/
+
+  .testimonials__slider button {
+    width: 23px;
+    height: 23px;
+  }
+
+  .testimonials__circle {
+    padding: 11px 10px;
+  }
+
+  .testimonials__circle svg {
+    display: inline-block;
+    width: 18px;
+    height: 11px;
+  }
+
+  .testimonials__slider-next {
+    margin-left: -10px;
   }
 }
 
@@ -1740,7 +1807,8 @@ h2 {
   /*---------------------------------------- offer ------------------------------------------------*/
 
   .main__offer,
-  .main__process {
+  .main__process,
+  .main__testimonials {
     padding: 100px 0;
   }
 
@@ -1915,6 +1983,35 @@ h2 {
   .blog__link-paragraph {
     max-width: 288px;
   }
+
+  /*---------------------------------------- testimonials ------------------------------------------------*/
+
+  .testimonials__slide-inner {
+    padding: 50px;
+  }
+
+  .testimonials__name {
+    font-size: 21px;
+  }
+
+  .testimonials__text {
+    font-size: 18px;
+  }
+
+  .testimonials__socials {
+    top: 89%;
+  }
+
+  .testimonials__socials-link svg {
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+  }
+
+  .testimonials__slider button {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 /*======================================== 600px ==================================================*/
@@ -1974,7 +2071,10 @@ h2 {
     margin-bottom: 38px;
   }
 
-  .offer__title {
+  .offer__title,
+  .testimonials__title,
+  .process__title {
+    max-width: 350px;
     font-size: 35px;
   }
 
@@ -1990,11 +2090,8 @@ h2 {
     display: inline-block;
     width: 40px;
   }
+
   /*---------------------------------------- process ------------------------------------------------*/
-  .process__title {
-    max-width: 350px;
-    font-size: 35px;
-  }
 
   .process__paragraph {
     max-width: 88%;
@@ -2017,6 +2114,7 @@ h2 {
   }
 
   .brands__title {
+    font-size: 35px;
     margin-bottom: 25px;
   }
 
@@ -2058,16 +2156,18 @@ h2 {
   .blog__link-paragraph {
     max-width: 176px;
   }
+
+  /*---------------------------------------- testimonials ------------------------------------------------*/
+
+  .testimonials__slider-arrows,
+  .testimonials__socials {
+    display: none;
+  }
 }
 
 /*======================================== 400px ==================================================*/
 
 @media (max-width: 400px) {
-  /* --------------------- offer ------------------ */
-  .offer__title {
-    font-size: 32px;
-  }
-
   /*---------------------------------------- header-top ------------------------------------------------*/
 
   .header__body {
@@ -2142,12 +2242,16 @@ h2 {
     height: 19px;
   }
 
-  /*---------------------------------------- process ------------------------------------------------*/
+  /*---------------------------------------- offer ------------------------------------------------*/
+
+  .offer__title,
   .process__title,
   .blog__title,
   .brands__title {
     font-size: 32px;
   }
+
+  /*---------------------------------------- process ------------------------------------------------*/
 
   .process__paragraph {
     font-size: 14px;
@@ -2217,5 +2321,27 @@ h2 {
     width: 81%;
     max-width: fit-content;
     font-size: 13px;
+  }
+
+  /*---------------------------------------- testimonials ------------------------------------------------*/
+
+  .testimonials__title {
+    font-size: 32px;
+    max-width: 277px;
+  }
+  .testimonials__person {
+    margin-bottom: 10px;
+  }
+
+  .testimonials__name {
+    font-size: 18px;
+  }
+
+  .testimonials__city {
+    font-size: 13px;
+  }
+
+  .testimonials__text {
+    font-size: 14px;
   }
 }
