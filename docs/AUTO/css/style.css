@@ -1228,7 +1228,8 @@ h2 {
   .cta__content p,
   .brands__title,
   .blog__title,
-  .testimonials__title {
+  .testimonials__title,
+  .questions__title {
     font-size: 48px;
     line-height: 110%;
   }
@@ -1405,7 +1406,8 @@ h2 {
     padding: 100px 70px;
   }
 
-  .brands__title {
+  .brands__title,
+  .questions__title {
     font-size: 39px;
   }
 
@@ -1465,6 +1467,33 @@ h2 {
     font-size: 21px;
     line-height: 140%;
     text-align: center;
+  }
+
+  /*---------------------------------------- questions------------------------------------------------*/
+  .main__questions {
+    padding: 115px 0;
+  }
+
+  .questions__title {
+    margin-bottom: 65px;
+  }
+
+  .questions__head-title {
+    font-size: 22px;
+  }
+
+  .questions__accordeon-link {
+    padding: 30px 40px;
+  }
+
+  .questions__head-btn {
+    width: 44px;
+    height: 44px;
+  }
+
+  .questions__head-btn::before,
+  .questions__head-btn::after {
+    left: 32%;
   }
 }
 
@@ -1808,7 +1837,8 @@ h2 {
 
   .main__offer,
   .main__process,
-  .main__testimonials {
+  .main__testimonials,
+  .main__questions {
     padding: 100px 0;
   }
 
@@ -2012,6 +2042,65 @@ h2 {
     width: 20px;
     height: 20px;
   }
+
+  /*---------------------------------------- questions------------------------------------------------*/
+
+  .questions__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .questions__title {
+    margin-bottom: 60px;
+  }
+
+  .questions__accordeon {
+    width: 100%;
+  }
+
+  .questions__accordeon-head {
+    justify-content: center;
+  }
+
+  .questions__accordeon-link {
+    padding: 25px 25px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .questions__head-title {
+    font-size: 20px;
+    min-width: 370px;
+    margin-right: 30px;
+  }
+
+  .questions__accordeon-text {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 14px;
+    line-height: 150%;
+  }
+
+  .questions__head-btn {
+    width: 40px;
+    height: 40px;
+  }
+
+  .questions__head-btn::before,
+  .questions__head-btn::after {
+    left: 30%;
+  }
+}
+
+/*======================================== 550px ==================================================*/
+@media (max-width: 550px) {
+  /*---------------------------------------- questions------------------------------------------------*/
+
+  .questions__head-title {
+    margin-right: 11px;
+  }
 }
 
 /*======================================== 600px ==================================================*/
@@ -2073,7 +2162,8 @@ h2 {
 
   .offer__title,
   .testimonials__title,
-  .process__title {
+  .process__title,
+  .questions__title {
     max-width: 350px;
     font-size: 35px;
   }
@@ -2163,6 +2253,38 @@ h2 {
   .testimonials__socials {
     display: none;
   }
+
+  /*---------------------------------------- questions------------------------------------------------*/
+
+  .questions__title {
+    margin-bottom: 40px;
+  }
+
+  .questions__head-title {
+    font-size: 18px;
+    max-width: 212px;
+    min-width: min-content;
+    margin-right: 40px;
+  }
+
+  .questions__accordeon-link {
+    padding: 20px 22px;
+  }
+
+  .questions__accordeon-text {
+    margin-top: 10px;
+    font-size: 15px;
+  }
+
+  .questions__head-btn {
+    width: 35px;
+    height: 35px;
+  }
+
+  .questions__head-btn::before,
+  .questions__head-btn::after {
+    left: 27%;
+  }
 }
 
 /*======================================== 400px ==================================================*/
@@ -2247,7 +2369,8 @@ h2 {
   .offer__title,
   .process__title,
   .blog__title,
-  .brands__title {
+  .brands__title,
+  .questions__title {
     font-size: 32px;
   }
 
@@ -2343,5 +2466,31 @@ h2 {
 
   .testimonials__text {
     font-size: 14px;
+  }
+
+  /*---------------------------------------- questions------------------------------------------------*/
+
+  .questions__head-title {
+    font-size: 16px;
+    margin-right: 30px;
+  }
+
+  .questions__accordeon-link {
+    padding: 20px 22px;
+  }
+
+  .questions__accordeon-text {
+    font-size: 13px;
+  }
+
+  .questions__head-btn {
+    width: 30px;
+    height: 30px;
+  }
+
+  .questions__head-btn::before,
+  .questions__head-btn::after {
+    top: 46%;
+    width: 15.03px;
   }
 }
