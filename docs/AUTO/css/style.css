@@ -19,24 +19,6 @@ body {
   overflow: hidden;
 }
 
-.overlay {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.362);
-  z-index: 90;
-  visibility: hidden;
-  opacity: 0;
-  transition: all 0.3s;
-}
-
-.overlay--show {
-  visibility: visible;
-  opacity: 1;
-}
-
 .container {
   max-width: 1310px;
   padding: 0 15px;
@@ -1242,7 +1224,8 @@ h2 {
   .blog__title,
   .testimonials__title,
   .questions__title,
-  .connection__title {
+  .connection__title,
+  .footer__top-title {
     font-size: 48px;
     line-height: 110%;
   }
@@ -1363,6 +1346,24 @@ h2 {
   .service__item {
     font-size: 13px;
   }
+
+  /*---------------------------------------- footer ------------------------------------------------*/
+  .footer__top-left {
+    margin-right: 100px;
+  }
+
+  .footer__top-title {
+    margin-bottom: 60px;
+  }
+
+  .footer__top-subtitle {
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+
+  .footer__top-text {
+    font-size: 20px;
+  }
 }
 
 /*======================================== 1000px ==================================================*/
@@ -1447,9 +1448,10 @@ h2 {
   }
   /*---------------------------------------- cta ------------------------------------------------*/
 
-  .cta__content p {
+  .cta__content p,
+  .footer__top-title {
     font-size: 39px;
-    max-width: 352px;
+    max-width: 353px;
   }
 
   /*---------------------------------------- brands ------------------------------------------------*/
@@ -1573,11 +1575,51 @@ h2 {
   .service__item {
     font-size: 12px;
   }
+
+  /*---------------------------------------- footer ------------------------------------------------*/
+
+  .footer__top-subtitle {
+    margin-bottom: 0;
+  }
+
+  .footer__top-info {
+    margin-bottom: 25px;
+  }
+
+  .footer__top-title {
+    margin-bottom: 50px;
+  }
+
+  .footer__bottom-nav--item {
+    margin-left: 22px;
+  }
+
+  .footer__bottom-nav {
+    margin-right: 20px;
+  }
 }
 
 /*======================================== 900px ==================================================*/
 
 @media (max-width: 900px) {
+  .overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.362);
+    z-index: 90;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s;
+  }
+
+  .overlay--show {
+    visibility: visible;
+    opacity: 1;
+  }
+
   /*---------------------------------------- header-top ------------------------------------------------*/
 
   .burger {
@@ -1739,6 +1781,17 @@ h2 {
   .brands__block {
     margin-bottom: -35px;
   }
+
+  /*---------------------------------------- footer ------------------------------------------------*/
+
+  .footer__bottom-nav--item {
+    margin-left: 12px;
+  }
+
+  .footer__bottom-desc {
+    font-size: 12px;
+    white-space: nowrap;
+  }
 }
 
 /*======================================== 850px ==================================================*/
@@ -1891,8 +1944,26 @@ h2 {
 
   /*---------------------------------------- location ------------------------------------------------*/
 
-  .location__img{
+  .location__img {
     height: 400px;
+  }
+
+  /*---------------------------------------- footer ------------------------------------------------*/
+
+  .footer__top-left {
+    margin-right: 80px;
+  }
+
+  .footer__top-subtitle {
+    font-size: 15px;
+  }
+
+  .footer__top-text {
+    font-size: 18px;
+  }
+
+  .footer__bottom-nav--item {
+    font-size: 14px;
   }
 }
 
@@ -2269,11 +2340,73 @@ h2 {
     text-align: center;
   }
 
-    /*---------------------------------------- location ------------------------------------------------*/
+  /*---------------------------------------- location ------------------------------------------------*/
 
-    .location__img{
-      height: 300px;
-    }
+  .location__img {
+    height: 300px;
+  }
+
+  /*---------------------------------------- footer ------------------------------------------------*/
+
+  .footer__top {
+    padding: 80px 0;
+  }
+
+  .footer__top-inner,
+  .footer__bottom-inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__top-left {
+    margin-right: 0;
+  }
+
+  .footer__top-socials {
+    margin: 30px 0;
+    justify-content: center;
+  }
+
+  .footer__top-title {
+    text-align: center;
+    margin: 0;
+  }
+
+  .footer__top-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__top-info {
+    margin-bottom: 20px;
+  }
+
+  .footer__top-subtitle,
+  .footer__top-text {
+    text-align: center;
+  }
+
+  .footer__bottom {
+    padding: 40px 0;
+  }
+
+  .footer__bottom-nav {
+    margin: 25px 0;
+  }
+
+  .footer__bottom-nav--item {
+    font-size: 18px;
+    margin-left: 20px;
+  }
+
+  .footer__bottom-nav--item:first-child {
+    margin-left: 0;
+  }
+
+  .footer__bottom-desc {
+    font-size: 14px;
+  }
 }
 
 /*======================================== 550px ==================================================*/
@@ -2346,7 +2479,8 @@ h2 {
   .testimonials__title,
   .process__title,
   .questions__title,
-  .connection__title {
+  .connection__title,
+  .footer__top-title {
     max-width: 350px;
     font-size: 35px;
   }
@@ -2494,6 +2628,20 @@ h2 {
   .connection__info-text {
     font-size: 15px;
   }
+
+  /*---------------------------------------- footer ------------------------------------------------*/
+
+  .footer__bottom-nav {
+    width: 80%;
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .footer__bottom-nav--item {
+    margin-left: 14px;
+  }
 }
 
 /*======================================== 400px ==================================================*/
@@ -2580,7 +2728,8 @@ h2 {
   .blog__title,
   .brands__title,
   .questions__title,
-  .connection__title {
+  .connection__title,
+  .footer__top-title {
     font-size: 32px;
   }
 
@@ -2710,4 +2859,49 @@ h2 {
     max-width: 308px;
   }
 
+  /*---------------------------------------- footer ------------------------------------------------*/
+  .footer__top {
+    padding: 70px 0;
+  }
+
+  .footer__top-title {
+    max-width: 289px;
+  }
+
+  .footer__top-socials {
+    margin: 20px 0;
+  }
+
+  .footer__top-info {
+    margin-bottom: 12px;
+  }
+
+  .footer__top-subtitle {
+    font-size: 13px;
+  }
+
+  .footer__top-text {
+    font-size: 16px;
+  }
+
+  .footer__bottom {
+    padding: 30px 0;
+}
+
+  .footer__bottom-nav {
+    width: 80%;
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .footer__bottom-nav--item {
+    font-size: 16px;
+    margin-left: 0;
+  }
+
+  .footer__bottom-desc {
+    font-size: 13px;
+  }
 }
