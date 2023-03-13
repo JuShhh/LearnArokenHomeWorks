@@ -1,0 +1,263 @@
+@import "fonts";
+@import "reset";
+
+// =================================================== GLOBAL =====================================//
+html {
+  font-family: Playfair Display, sans-serif;
+  text-transform: capitalize;
+}
+
+@mixin font($fw, $fs, $lh, $col) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  color: $col;
+}
+
+@mixin pos($pos, $top, $left, $right, $bot) {
+  position: $pos;
+  top: $top;
+  left: $left;
+  right: $right;
+  bottom: $bot;
+}
+
+@mixin flex($fd, $ai, $jc) {
+  display: flex;
+  flex-direction: $fd;
+  align-items: $ai;
+  justify-content: $jc;
+}
+
+@mixin btn($padding, $fw, $fs, $lh, $br) {
+  display: inline-block;
+  background-color: #0095a4;
+  color: #ffffff;
+  white-space: nowrap;
+  padding: $padding;
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  border-radius: $br;
+  transition: 0.4s;
+}
+
+@mixin card($padding) {
+  background: #ffffff;
+  box-shadow: 8px 8px 49px rgba(25, 57, 70, 0.25);
+  border-radius: 6px;
+  padding: $padding;
+}
+
+$blue-color: #0095a4;
+
+.wrapper {
+  min-height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1203px;
+  padding: 0 15px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.change__color {
+  color: $blue-color;
+}
+
+.header__buttons-contact:hover,
+.header__info-btn:hover {
+  transform: scale(1.05);
+}
+//====================================================================================================//
+
+.header__top {
+  background-color: #f4fdfe;
+  padding: 25.5px 0;
+}
+
+.header__top-inner {
+  @include flex(initial, center, space-between);
+}
+
+.header__nav {
+  margin-right: 136px;
+  margin-left: auto;
+}
+
+.header__nav-list {
+  display: flex;
+}
+
+.header__nav-item {
+  margin-right: 28px;
+}
+
+.header__nav-item:last-child {
+  margin-right: 0;
+}
+
+.header__nav-link,
+.header__buttons-login {
+  position: relative;
+  @include font(400, 18px, 120%, #636465);
+  white-space: nowrap;
+  transition: all 0.3s;
+}
+
+.header__nav-link:hover,
+.header__buttons-login:hover {
+  color: #101c26;
+}
+
+.header__nav-link::before,
+.header__buttons-login::before {
+  content: "";
+  width: 0;
+  height: 1px;
+  position: absolute;
+  bottom: -1px;
+  background-color: #101c26;
+  transition: width 0.3s ease-in-out;
+}
+
+.header__nav-link:hover:before,
+.header__buttons-login:hover:before {
+  width: 100%;
+}
+
+.header__buttons {
+  display: flex;
+  align-items: center;
+}
+
+.header__buttons-login {
+  margin-right: 26px;
+}
+
+.header__buttons-contact {
+  @include btn(10px 24px, 600, 16px, 120%, 50px);
+}
+
+.header__body {
+  margin-top: 81px;
+}
+
+.header__content-top {
+  @include flex(initial, flex-start, space-between);
+  margin-bottom: 79px;
+}
+
+.header__title {
+  max-width: 604px;
+  @include font(700, 68px, 120%, #0c1623);
+}
+
+.header__info-text {
+  max-width: 468px;
+  font-family: Inter, sans-serif;
+  @include font(400, 16px, 170%, #122237);
+  text-transform: none;
+}
+
+.header__info-btn {
+  @include btn(10px 24px, 600, 16px, 120%, 50px);
+  margin-top: 23px;
+}
+
+.header__content-bottom {
+  position: relative;
+}
+
+.header__card1 {
+  position: relative;
+  max-width: 288px;
+  @include card(20px);
+  @include pos(absolute, -65px, none, -45px, none);
+  transition: all 0.3s;
+}
+
+.header__card1:hover,
+.header__card2:hover {
+  box-shadow: 12px 12px 49px rgba(25, 57, 70, 0.558);
+}
+
+.header__img-man {
+  @include pos(absolute, -17%, none, -5%, none);
+}
+
+.header__card1-subtitle {
+  @include font(500, 24px, 120%, #021c1c);
+  margin-bottom: 8px;
+}
+
+.header__rating {
+  @include flex(initial, flex-center, space-between);
+}
+
+.header__proff {
+  @include font(400, 14px, 120%, #3e5658b2);
+}
+
+.header__text {
+  color: $blue-color;
+}
+
+.header__desc {
+  @include font(400, 16px, 170%, #122237);
+  text-transform: none;
+  margin-top: 15px;
+}
+
+.header__card2 {
+  width: 353px;
+  @include card(18px 25px 18px 21px);
+  @include pos(absolute, none, -60px, none, 220px);
+  display: flex;
+  transition: all 0.3s;
+}
+
+.header__card2-content {
+  @include flex(column, flex-start, flex-start);
+  margin-left: 16px;
+}
+
+.header__card2-subtitle {
+  @include font(600, 18px, 120%, #0c1623);
+  margin: 8px 0;
+}
+
+.header__card2-text {
+  @include font(400, 14px, 120%, #3e5658b2);
+}
+
+.heager__card2-sale {
+  margin: 14px 0;
+  background-color: #e8eff4;
+  white-space: nowrap;
+  padding: 5.5px 20.5px;
+  @include font(500, 14px, 120%, $blue-color);
+  border-radius: 10px;
+}
+
+.header__card2-price {
+  color: $blue-color;
+}
+
+.header__body {
+  position: relative;
+  z-index: 20;
+}
+
+.header__body::after {
+  z-index: -5;
+  content: "";
+  position: absolute;
+  top: calc(100% - 317px);
+  background-color: #e8eff4;
+  width: 100%;
+  height: 317px;
+}
