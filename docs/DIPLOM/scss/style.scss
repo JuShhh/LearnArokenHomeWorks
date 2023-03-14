@@ -55,6 +55,7 @@ $blue-color: #0095a4;
   min-height: 100%;
   width: 100%;
   overflow: hidden;
+  margin: 0 auto;
 }
 
 .container {
@@ -177,7 +178,7 @@ $blue-color: #0095a4;
   max-width: 288px;
   @include card(20px);
   @include pos(absolute, -65px, none, -45px, none);
-  transition: all 0.3s;
+  transition: all 0.5s;
 }
 
 .header__card1:hover,
@@ -194,16 +195,16 @@ $blue-color: #0095a4;
   margin-bottom: 8px;
 }
 
-.header__rating {
+.header__card1-rating {
   @include flex(initial, flex-center, space-between);
 }
 
-.header__proff {
+.header__card1-proff {
   @include font(400, 14px, 120%, #3e5658b2);
 }
 
-.header__text {
-  color: $blue-color;
+.header__card1-text {
+  @include font(400, 16px, 120%, $blue-color);
 }
 
 .header__desc {
@@ -217,7 +218,7 @@ $blue-color: #0095a4;
   @include card(18px 25px 18px 21px);
   @include pos(absolute, none, -60px, none, 220px);
   display: flex;
-  transition: all 0.3s;
+  transition: all 0.5s;
 }
 
 .header__card2-content {
@@ -260,4 +261,152 @@ $blue-color: #0095a4;
   background-color: #e8eff4;
   width: 100%;
   height: 317px;
+}
+
+//==========================================================================================================//
+
+.main__choice {
+  background-color: #f4fdfe;
+  padding: 110px 0 267px;
+}
+
+.choice__inner {
+  @include flex(initial, flex-start, space-between);
+}
+
+.choice__title {
+  @include font(600, 46px, 120%, #0c1623);
+  margin-bottom: 40px;
+}
+
+.choice__content-left {
+  position: relative;
+}
+
+.choice__img-house {
+  @include pos(absolute, none, -134px, none, none);
+  position: relative;
+}
+
+.choice__img-room {
+  @include pos(absolute, 335px, none, -30px, none);
+}
+
+.choice__content-right {
+  margin-top: 95.2px;
+  max-width: 592px;
+}
+
+.choice__text {
+  font-family: Inter, sans-serif;
+  margin-bottom: 133px;
+  @include font(400, 16px, 150%, #0c1623cc);
+  letter-spacing: 0.03em;
+  text-transform: none;
+}
+
+.choice__items {
+  @include flex(initial, flex-start, space-around);
+}
+
+.choice__item {
+  width: 176px;
+  height: 204px;
+  background: #ffffff;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+  @include flex(column, center, center);
+  transition: all 0.5s;
+}
+
+.choice__item:hover {
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.427);
+}
+
+.choice__desc {
+  @include font(600, 20px, 150%, #101c26);
+  margin-top: 20px;
+}
+
+//=======================================================================================/
+
+.main__amenities {
+  background-color: #ffffff;
+  position: relative;
+  z-index: 100;
+}
+
+.main__amenities::after {
+  content: "";
+  width: 80%;
+  height: 203px;
+  background-color: #0095a4;
+  @include pos(absolute, 79%, 0, none, none);
+  z-index: -1;
+}
+
+.amenities__inner {
+  @include flex(column, center, flex-start);
+}
+
+.amenities__title {
+  @include font(600, 48px, 120%, #0c1623);
+  margin-bottom: 20px;
+}
+
+.amenities__subtitle {
+  font-family: Inter, sans-serif;
+  margin-bottom: 41px;
+  text-transform: none;
+  @include font(400, 18px, 180%, #101c26);
+}
+
+.amenities__items {
+  @include flex(initial, center, space-between);
+  width: 100%;
+}
+
+.amenities__item {
+  width: 278px;
+  height: 334px;
+  background: #ffffff;
+  box-shadow: 6px 8px 46px rgba(130, 172, 162, 0.25);
+  border-radius: 10px;
+  @include flex(column, center, center);
+  transition: all 0.5s;
+}
+
+.amenities__item:hover {
+  box-shadow: 6px 8px 46px rgba(104, 118, 115, 0.482);
+  transform: scale(1.03);
+}
+
+.amenities__img {
+  position: relative;
+  z-index: 5;
+  width: 108px;
+  height: 108px;
+  margin-bottom: 30px;
+  @include flex(initial, center, center);
+}
+
+.amenities__circle {
+  @include pos(absolute, 50%, 50%, none, none);
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: #eafafb;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.amenities__desc {
+  @include font(500, 24px, 180%, #0c1623);
+}
+
+//=======================================================================================/
+
+.main__plans {
+  padding: 140px 0 125px;
+  background-color: #e8eff4;
 }
