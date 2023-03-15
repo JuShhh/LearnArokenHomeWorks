@@ -616,6 +616,130 @@ html {
 }
 
 .main__plans {
-  padding: 140px 0 125px;
+  padding: 201px 0 491px;
   background-color: #e8eff4;
+}
+
+.plans__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.plans__title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 120%;
+  color: #0c1623;
+  margin-bottom: 20px;
+}
+
+.plans__subtitle {
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 180%;
+  color: rgba(16, 28, 38, 0.8);
+  margin-bottom: 25px;
+  text-transform: none;
+}
+
+.plans__filter-box {
+  width: 40%;
+  display: flex;
+  flex-direction: initial;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+.plans__filter-btn {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  color: #0c1623;
+  background-color: transparent;
+  transition: all 0.3s;
+}
+
+.plans__filter-btn--active,
+.plans__filter-btn:hover {
+  transform: scale(1.03);
+  color: #0095a4;
+}
+
+.plans__items {
+  /* width: 100%;
+  @include flex(initial, flex-start, space-between);
+  flex-wrap: wrap; */
+  display: grid;
+  grid-template: repeat(2, auto)/repeat(3, 1fr);
+  gap: 30px;
+  margin: 0 auto;
+}
+
+.plans__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 370px;
+  height: 446px;
+  background: #ffffff;
+  box-shadow: 6px 8px 40px rgba(164, 166, 168, 0.25);
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+
+.plans__item:hover {
+  transform: scale(1.03);
+  box-shadow: 6px 8px 40px rgba(140, 141, 143, 0.566);
+}
+
+.plans__img img {
+  border-radius: 10px 10px 0px 0px;
+}
+
+.plans__text {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 120%;
+  color: #0c1623;
+  margin: 24px 0 16px;
+}
+
+.plans__desc {
+  font-family: Inter, sans-serif;
+  text-transform: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #3b464f;
+  margin-bottom: 20px;
+  max-width: 320px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.plans__link {
+  background-color: transparent;
+  width: 109px;
+  display: flex;
+  flex-direction: initial;
+  align-items: baseline;
+  justify-content: space-between;
+  transition: all 0.3s;
+}
+
+.plans__link:hover {
+  transform: scale(1.07);
+}
+
+.plans__link-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #0095a4;
+  letter-spacing: 0.03em;
 }/*# sourceMappingURL=style.css.map */
