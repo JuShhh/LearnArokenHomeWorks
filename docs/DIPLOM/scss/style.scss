@@ -517,6 +517,13 @@ $blue-color: #0095a4;
 .swiper-button-next,
 .swiper-button-prev {
   color: #1d263a;
+  transition: all 0.3s;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: $blue-color;
+  transform: scale(1.1);
 }
 
 .gallery__title {
@@ -532,6 +539,3 @@ $blue-color: #0095a4;
   @include font(400, 16px, 175%, #101c26cc);
   margin-bottom: 53px;
 }
-
-
-
