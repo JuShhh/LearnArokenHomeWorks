@@ -70,7 +70,11 @@ $blue-color: #0095a4;
 }
 
 .header__buttons-contact:hover,
-.header__info-btn:hover {
+.header__info-btn:hover,
+.chance__btn:hover,
+.visit__btn:hover,
+.footer__btn-blue:hover,
+.footer__btn-black:hover {
   transform: scale(1.05);
 }
 //===================================================================================================================//
@@ -538,4 +542,373 @@ $blue-color: #0095a4;
   font-family: Inter, sans-serif;
   @include font(400, 16px, 175%, #101c26cc);
   margin-bottom: 53px;
+}
+
+//=========================================================================================================================//
+
+.main__chance {
+  width: 100%;
+  height: 800px;
+  background: linear-gradient(
+      180deg,
+      rgba(7, 20, 30, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    url("../images/image/house_miss.png");
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 140px;
+}
+
+.chance__inner {
+  @include flex(initial, flex-start, space-between);
+}
+
+.chance__box-text {
+  max-width: 433px;
+}
+
+.chance__title {
+  margin: 125px 0 20px;
+  @include font(600, 48px, 120%, #ffffff);
+  letter-spacing: 0.03em;
+}
+
+.chance__subtitle {
+  font-family: Inter, sans-serif;
+  @include font(400, 16px, 170%, #ffffff);
+  letter-spacing: 0.03em;
+}
+
+.chance__box-form {
+  background: #ffffff;
+  border-radius: 280.513px 280.513px 0px 0px;
+  margin-top: 26px;
+  height: 774px;
+  width: 510px;
+}
+
+.chance__form {
+  height: 100%;
+  margin-top: 105.25px;
+  @include flex(column, center, flex-start);
+}
+
+.chance__form-title {
+  margin-bottom: 27px;
+  @include font(600, 24px, 120%, #0c1623);
+}
+
+.chance__row {
+  display: flex;
+}
+
+.chance__label {
+  @include font(600, 16px, 120%, #0c1623);
+  margin-bottom: 30px;
+}
+
+.chance__input,
+.chance__message {
+  display: block;
+  padding: 13px 5px 14px 17px;
+  @include font(400, 16px, 120%, #101c2699);
+  background: #f4fdfe;
+  border: 0.574862px solid #76989a;
+  border-radius: 6.04423px;
+  margin: 10px 31px 0 0;
+}
+
+.chance__tel,
+.chance__lastname,
+.chance__message {
+  margin-right: 0;
+}
+
+.chance__textarea {
+  width: 86%;
+  margin: 15px 0 45px;
+  text-transform: none;
+}
+
+.chance__message {
+  margin-top: 10px;
+  resize: none;
+  height: 160px;
+  min-width: 100%;
+}
+
+.chance__btn {
+  @include btn(12px 0, 700, 18px, 120%, 32px);
+  width: 86%;
+  margin-bottom: 45px;
+}
+
+.chance__desc {
+  font-family: Inter, sans-serif;
+  @include font(400, 12px, 170%, #6e7189);
+  letter-spacing: 0.03em;
+}
+
+//=========================================================================================================================//
+
+.main__faq {
+  background-color: #e8eff4;
+  padding: 114px 0 79px;
+}
+
+.faq__inner {
+  @include flex(initial, flex-start, space-between);
+}
+
+.faq__content-left {
+  max-width: 410px;
+}
+
+.faq__title {
+  @include font(800, 48px, 130%, #0c1623);
+  margin-bottom: 15px;
+}
+
+.faq__subtitle {
+  font-family: Inter, sans-serif;
+  @include font(400, 16px, 150%, #0c1623);
+  text-transform: none;
+}
+
+.faq__content-right {
+  text-transform: none;
+}
+
+.faq__accordeon {
+  width: 682px;
+}
+
+.faq__accordeon-item {
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.faq__accordeon-link {
+  display: block;
+  padding: 35px;
+  border-radius: 5px;
+}
+
+.faq__accordeon-head {
+  position: relative;
+  @include flex(initial, center, space-between);
+}
+
+.faq__head-title {
+  @include font(600, 18px, 170%, #0c1623);
+}
+
+.faq__head-btn {
+  transition: all 0.5s;
+}
+
+.faq__accordeon-text {
+  font-family: Inter, sans-serif;
+  @include font(400, 16px, 150%, #1d263ae5);
+  margin-top: 16px;
+}
+
+.faq__accordeon-link--active {
+  border: 1px solid #3fc3ca;
+  box-shadow: 6px 10px 50px rgba(168, 175, 183, 0.25);
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+
+.faq__accordeon-link--active .faq__head-btn {
+  transform: rotate(180deg);
+}
+
+//=========================================================================================================================//
+
+.main__visit {
+  background-color: #0c1623;
+  padding: 64px 0;
+}
+
+.visit__inner {
+  @include flex(column, center, flex-start);
+}
+
+.visit__title {
+  @include font(600, 48px, 130%, #ffffff);
+  margin-bottom: 20px;
+}
+
+.visit__subtitle {
+  font-family: Inter, sans-serif;
+  @include font(400, 16px, 130%, #ffffffcc);
+  margin-bottom: 32px;
+  text-transform: none;
+}
+
+.visit__btn {
+  @include btn(18px 41px, 700, 16px, 120%, 60px);
+}
+
+//=========================================================================================================================//
+
+.main__contacts {
+  padding: 62px 0 74px;
+  background-color: #e8eff4;
+}
+
+.contacts__inner {
+  @include flex(initial, center, space-around);
+}
+
+.contacs__item {
+  display: flex;
+}
+
+.contacs__item img {
+  margin-right: 16px;
+}
+
+.contacts__title {
+  @include font(600, 24px, 32px, #0c1623);
+  margin-bottom: 13px;
+}
+
+.contacts__subtitle {
+  font-family: Inter, sans-serif;
+  text-transform: none;
+  @include font(500, 16px, 81%, #111c1ecc);
+}
+
+.contacts__tel {
+  display: block;
+  transition: all 0.4s;
+}
+
+.contacts__tel:hover {
+  transform: scale(1.15);
+  color: $blue-color;
+}
+
+//=========================================================================================================================//
+
+.footer {
+  background-color: #0c1623;
+  padding: 110px 0 34px;
+}
+
+.footer__inner {
+  display: flex;
+}
+
+.footer__item1 {
+  max-width: 318px;
+  margin-right: 100px;
+}
+
+.footer__item2 {
+  @include flex(column, center, flex-start);
+  margin-right: 251px;
+  max-width: 341px;
+}
+
+.footer__logo {
+  margin-bottom: 21px;
+  display: block;
+}
+
+.footer__desc {
+  font-family: Inter, sans-serif;
+  @include font(400, 16px, 160%, #ffffffe5);
+  text-transform: none;
+  margin-bottom: 40px;
+}
+
+.footer__socials {
+  @include flex(initial, flex-start, space-between);
+  max-width: 232px;
+}
+
+.socials__item {
+  transition: all 0.4s;
+}
+
+.socials__item:hover {
+  transform: scale(1.15);
+}
+
+.socials__item-link {
+  position: relative;
+  z-index: 5;
+  width: 40px;
+  height: 40px;
+  @include flex(initial, center, center);
+}
+
+.socials__item-circle {
+  @include pos(absolute, 50%, 50%, none, none);
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: $blue-color;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.footer__title {
+  @include font(500, 24px, 130%, #ffffff);
+  max-width: 267px;
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.footer__btns {
+  width: 100%;
+  @include flex(initial, center, space-between);
+  margin-bottom: 210px;
+}
+
+.footer__btn-blue {
+  @include btn(16px 37px, 600, 16px, 120%, 60px);
+}
+
+.footer__btn-black {
+  @include font(600, 18px, 120%, $blue-color);
+  background-color: #0c1623;
+  white-space: nowrap;
+  padding: 16px 22px;
+  border-radius: 60px;
+  border: 1px solid #0395a4;
+  transition: 0.4s;
+}
+
+.footer__copy {
+  font-family: Inter, sans-serif;
+  @include font(400, 17px, 120%, #ffffff);
+  letter-spacing: 0.05em;
+  opacity: 0.7;
+  text-align: center;
+}
+
+.footer__subtitle {
+  @include font(500, 24px, 120%, #ffffff);
+  margin-bottom: 20px;
+}
+
+.footer__nav-item {
+  @include font(400, 18px, 120%, #ffffff);
+  margin-bottom: 14px;
+  transition: all 0.3s;
+}
+
+.footer__nav-item:hover {
+  color: $blue-color;
+  transform: scale(1.05);
+}
+
+.footer__nav-item:last-child {
+  margin-bottom: 0;
 }
