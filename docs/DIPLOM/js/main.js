@@ -47,3 +47,25 @@ $(function () {
     $("body,html").animate({ scrollTop: top }, 1700);
   });
 });
+
+
+$(function () {
+  $(window).on("scroll", function () {
+    if (
+      $(window).scrollTop() > 0 &&
+      $(".header__top").hasClass("header__top--open") === false
+    ) {
+      $(".burger").addClass("burger--follow");
+    } else {
+      $(".burger").removeClass("burger--follow");
+    }
+  });
+
+  $(".burger, .overlay, .header__top a").on("click", function (e) {
+    e.preventDefault();
+    $(".header__top").toggleClass("header__top--open");
+    $(".overlay").toggleClass("overlay--show");
+    $(".burger").toggleClass("open");
+  });
+});
+
