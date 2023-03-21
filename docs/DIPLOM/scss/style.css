@@ -1269,6 +1269,19 @@ html {
   margin-bottom: 0;
 }
 
+/*======================================== 1440px ==================================================*/
+@media (max-width: 1440px) {
+  .choice__img-house {
+    left: -60px;
+  }
+  .choice__img-room {
+    top: 350px;
+    right: -50px;
+  }
+  .choice__content-right {
+    max-width: 560px;
+  }
+}
 /*======================================== 1300px ==================================================*/
 @media (max-width: 1300px) {
   .header__card1 {
@@ -1286,6 +1299,26 @@ html {
     max-width: 1100px;
     display: block;
     margin: 0 auto;
+  }
+  /*--------------------------------------------------------------------------------------*/
+  .choice__img-house {
+    left: 0;
+  }
+  .choice__img-room {
+    top: 360px;
+    right: -100px;
+  }
+  .choice__img-house img {
+    width: 450px;
+    height: 500px;
+  }
+  .choice__img-room img {
+    width: 240px;
+    height: 345px;
+  }
+  .choice__item {
+    width: 170px;
+    height: 200px;
   }
 }
 /*======================================== 1200px ==================================================*/
@@ -1306,6 +1339,27 @@ html {
     width: -moz-fit-content;
     width: fit-content;
   }
+  /*--------------------------------------------------------------------------------------*/
+  .main__choice {
+    padding: 110px 0 120px;
+  }
+  .choice__img-room {
+    top: 400px;
+    right: -130px;
+  }
+  .choice__text {
+    margin-bottom: 35px;
+  }
+  .choice__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 650px;
+  }
+  .choice__text {
+    text-align: center;
+  }
 }
 /*======================================== 1100px ==================================================*/
 @media (max-width: 1100px) {
@@ -1318,6 +1372,10 @@ html {
   }
   .header__card2 {
     left: 10px;
+  }
+  /*--------------------------------------------------------------------------------------*/
+  .choice__text {
+    max-width: 480px;
   }
 }
 /*======================================== 1000px ==================================================*/
@@ -1382,6 +1440,52 @@ html {
   .header__card2-price {
     font-size: 15px;
   }
+  /*--------------------------------------------------------------------------------------*/
+  .main__choice {
+    padding: 130px 0;
+  }
+  .choice__title {
+    font-size: 40px;
+    margin-bottom: 70px;
+  }
+  .choice__content-right {
+    margin-top: 0;
+  }
+  .choice__text {
+    text-align: end;
+    max-width: none;
+  }
+  .choice__img-house img {
+    width: 430px;
+    height: 460px;
+  }
+  .choice__img-room img {
+    width: 230px;
+    height: 320px;
+  }
+  .choice__img-room {
+    top: 355px;
+    right: -145px;
+  }
+  .choice__items {
+    width: 90%;
+    align-items: flex-end;
+    height: 550px;
+  }
+  .choice__item {
+    width: 150px;
+    height: 165px;
+  }
+  .choice__img-qual img,
+  .choice__img-secure img,
+  .choice__img-price img {
+    width: 55px;
+    height: 55px;
+  }
+  .choice__desc {
+    font-size: 18px;
+    margin-top: 15px;
+  }
 }
 /*======================================== 900px ==================================================*/
 @media (max-width: 900px) {
@@ -1408,7 +1512,7 @@ html {
     left: none;
     right: 1%;
     bottom: none;
-    z-index: 150;
+    z-index: 350;
     height: 60px;
     width: 60px;
     border-radius: 50%;
@@ -1465,7 +1569,7 @@ html {
     right: 0;
     bottom: 0;
     background-color: #ffffff;
-    z-index: 100;
+    z-index: 200;
     transform: translateX(100%);
     transition: all 0.3s;
   }
@@ -1534,6 +1638,7 @@ html {
     align-items: center;
     justify-content: space-around;
   }
+  /*--------------------------------------------------------------------------------------*/
 }
 /*======================================== 850px ==================================================*/
 @media (max-width: 850px) {
@@ -1543,6 +1648,41 @@ html {
   .header__card2 img {
     width: 75px;
     height: 90px;
+  }
+  /*--------------------------------------------------------------------------------------*/
+  .choice__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+  .choice__title {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .choice__img-room {
+    top: 243px;
+    right: -110px;
+  }
+  .choice__img-room img {
+    border-radius: 90px;
+    height: 270px;
+    width: 210px;
+  }
+  .choice__img-house img {
+    width: 390px;
+    border-radius: 110px;
+    height: 420px;
+  }
+  .choice__text {
+    margin: 50px 0;
+    text-align: center;
+  }
+  .choice__items {
+    width: 100%;
+    flex-direction: initial;
+    height: auto;
+  }
+  .choice__item {
+    border-radius: 20px;
   }
 }
 /*======================================== 650px ==================================================*/
@@ -1564,6 +1704,53 @@ html {
   .header__card2 {
     margin-top: 25px;
   }
+  /*--------------------------------------------------------------------------------------*/
+  .choice__title {
+    font-size: 34px;
+  }
+  .choice__content-right {
+    max-width: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .choice__text {
+    max-width: 400px;
+  }
+  .choice__img-house img {
+    width: 360px;
+    height: 380px;
+  }
+  .choice__img-room img {
+    display: none;
+  }
+  .choice__items {
+    justify-content: space-around;
+  }
+  .choice__item {
+    width: 130px;
+    height: 130px;
+    text-align: center;
+  }
+  .choice__img-qual img,
+  .choice__img-secure img,
+  .choice__img-price img {
+    width: 45px;
+    height: 45px;
+  }
+  .choice__desc {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+}
+/*======================================== 550px ==================================================*/
+@media (max-width: 550px) {
+  .choice__img-house img {
+    width: 340px;
+    height: 350px;
+  }
 }
 /*======================================== 500px ==================================================*/
 @media (max-width: 500px) {
@@ -1578,10 +1765,28 @@ html {
   .header__card1-subtitle {
     font-size: 17px;
   }
-  .header__card1-rating {
+  .header__card1-rating,
+  .header__desc {
     font-size: 14px;
   }
-  .header__desc {
+  /*--------------------------------------------------------------------------------------*/
+  .main__choice {
+    padding: 110px 0;
+  }
+  .choice__text {
+    margin: 30px 0;
+  }
+  .choice__item {
+    width: 100px;
+    height: 110px;
+  }
+  .choice__img-qual img,
+  .choice__img-secure img,
+  .choice__img-price img {
+    width: 40px;
+    height: 40px;
+  }
+  .choice__desc {
     font-size: 14px;
   }
 }
@@ -1600,5 +1805,31 @@ html {
   }
   .header__info-text {
     font-size: 15px;
+  }
+  /*----------------------------------------------------------------------------------------*/
+  .choice__title {
+    margin-bottom: 25px;
+    font-size: 30px;
+  }
+  .choice__text {
+    font-size: 15px;
+    margin: 20px 0;
+  }
+  .choice__img-house img {
+    width: 300px;
+    height: 310px;
+  }
+  .choice__item {
+    width: 85px;
+    height: 90px;
+  }
+  .choice__img-qual img,
+  .choice__img-secure img,
+  .choice__img-price img {
+    width: 30px;
+    height: 30px;
+  }
+  .choice__desc {
+    margin-top: 5px;
   }
 }/*# sourceMappingURL=style.css.map */
