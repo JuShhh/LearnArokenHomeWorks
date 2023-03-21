@@ -1938,6 +1938,9 @@ html {
     font-size: 15px;
   }
   /*----------------------------------------------------------------------------------------*/
+  .main__choice {
+    padding: 100px 0;
+  }
   .choice__title {
     margin-bottom: 25px;
     font-size: 30px;
