@@ -5,7 +5,6 @@
 html {
   font-family: Playfair Display, sans-serif;
   text-transform: capitalize;
-  background-color: red;
 }
 
 @mixin font($fw, $fs, $lh, $col) {
@@ -2077,7 +2076,6 @@ $blue-color: #0095a4;
     height: 28px;
   }
 
- 
   /*----------------------------------------------------------------------------------------*/
   .plans__subtitle {
     max-width: 210px;
@@ -2118,7 +2116,7 @@ $blue-color: #0095a4;
   }
 
   /*----------------------------------------------------------------------------------------*/
-  
+
   .slide__img img {
     width: 245px;
     height: 280px;
