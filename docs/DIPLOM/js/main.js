@@ -21,7 +21,7 @@ let swiper = new Swiper(document.querySelector(".swiper"), {
   },
 
   breakpoints: {
-    340: {
+    320: {
       slidesPerView: 1,
       spaceBetween: 0,
     },
