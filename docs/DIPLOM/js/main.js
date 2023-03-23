@@ -16,9 +16,9 @@ let swiper = new Swiper(document.querySelector(".swiper"), {
   speed: 700,
   spaceBetween: -100,
   loop: true,
-  // autoplay: {
-  //   delay: 3000,
-  // },
+  autoplay: {
+    delay: 3000,
+  },
 
   breakpoints: {
     340: {
@@ -29,30 +29,26 @@ let swiper = new Swiper(document.querySelector(".swiper"), {
       slidesPerView: 1.4,
       spaceBetween: -30,
     },
-    650:
-    {
+    650: {
       slidesPerView: 1.5,
       spaceBetween: -50,
     },
 
-    700:
-    {
+    700: {
       slidesPerView: 1.6,
       spaceBetween: -40,
     },
 
-    800:
-    {
+    800: {
       slidesPerView: 1.8,
       spaceBetween: -40,
     },
 
-    900:
-    {
+    900: {
       slidesPerView: 1.85,
       spaceBetween: -45,
     },
-    
+
     1000: {
       slidesPerView: 2,
       spaceBetween: -50,

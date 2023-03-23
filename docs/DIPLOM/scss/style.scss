@@ -1319,7 +1319,8 @@ $blue-color: #0095a4;
 
   .amenities__title,
   .plans__title,
-  .gallery__title {
+  .gallery__title,
+  .chance__title {
     font-size: 40px;
     margin-bottom: 15px;
   }
@@ -1368,6 +1369,61 @@ $blue-color: #0095a4;
   .swiper-button-next:after,
   .swiper-button-prev:after {
     font-size: 36px;
+  }
+
+  /*--------------------------------------------------------------------------------------*/
+
+  .main__chance {
+    height: 700px;
+  }
+
+  .chance__subtitle {
+    max-width: 340px;
+  }
+
+  .chance__form {
+    margin: 100px 0 0;
+  }
+
+  .chance__form-title {
+    margin-bottom: 24px;
+  }
+
+  .chance__row {
+    width: 86%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .chance__box-form {
+    height: 675px;
+  }
+
+  .chance__label {
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+  .chance__input {
+    margin-top: 10px;
+    margin-right: 0;
+    padding: 12px 3px 12px 3px;
+    text-align: center;
+  }
+
+  .chance__textarea {
+    margin: 10px 0 35px;
+    text-align: center;
+  }
+
+  .chance__message {
+    padding: 11px 5px 11px 10px;
+    height: 120px;
+    text-align: center;
+  }
+
+  .chance__btn {
+    margin-bottom: 30px;
   }
 }
 /*======================================== 900px ==================================================*/
@@ -1577,6 +1633,21 @@ $blue-color: #0095a4;
   .swiper-button-prev:after {
     font-size: 34px;
   }
+
+  /*--------------------------------------------------------------------------------------*/
+
+  .chance__input,
+  .chance__message {
+    font-size: 15px;
+  }
+
+  .chance__box-form {
+    width: 590px;
+  }
+
+  .chance__subtitle {
+    max-width: 250px;
+  }
 }
 
 /*======================================== 850px ==================================================*/
@@ -1686,6 +1757,65 @@ $blue-color: #0095a4;
   .swiper-button-prev:after {
     font-size: 32px;
   }
+
+  /*--------------------------------------------------------------------------------------*/
+
+  .chance__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .chance__title {
+    text-align: center;
+    margin: 20px 0;
+  }
+
+  .chance__subtitle {
+    max-width: 345px;
+    text-align: center;
+  }
+
+  .chance__box-form {
+    border-radius: 125px 4px 0px 0px;
+    margin-top: 20px;
+    height: 491px;
+    width: 491px;
+  }
+
+  .chance__box-text {
+    @include flex(column, center, flex-start);
+  }
+
+  .chance__form {
+    margin: 30px 0 0;
+  }
+
+  .chance__row {
+    justify-content: space-around;
+  }
+
+  .chance__form-title {
+    margin-bottom: 15px;
+    font-size: 22px;
+  }
+
+  .chance__label {
+    margin-bottom: 15px;
+  }
+
+  .chance__textarea {
+    width: 80%;
+    margin: 5px 0 25px;
+  }
+
+  .chance__message {
+    height: 80px;
+  }
+
+  .chance__btn {
+    margin-bottom: 20px;
+    width: 81%;
+  }
 }
 
 /*======================================== 700px ==================================================*/
@@ -1772,7 +1902,8 @@ $blue-color: #0095a4;
 
   .amenities__title,
   .plans__title,
-  .gallery__title {
+  .gallery__title,
+  .chance__title {
     font-size: 34px;
   }
 
@@ -1789,6 +1920,27 @@ $blue-color: #0095a4;
   .amenities__img img {
     width: 35px;
     height: 35px;
+  }
+
+  /*--------------------------------------------------------------------------------------*/
+  .main__chance {
+    height: 651px;
+  }
+
+  .chance__title {
+    margin: 30px 0 15px;
+  }
+
+  .chance__box-form {
+    width: 430px;
+  }
+
+  .chance__input {
+    width: 168px;
+  }
+
+  .chance__textarea {
+    width: 82%;
   }
 }
 
@@ -1838,6 +1990,8 @@ $blue-color: #0095a4;
     width: 340px;
     height: 350px;
   }
+
+  /*--------------------------------------------------------------------------------------*/
 }
 
 /*======================================== 500px ==================================================*/
@@ -1920,6 +2074,10 @@ $blue-color: #0095a4;
   }
 
   /*--------------------------------------------------------------------------------------*/
+  .main__plans {
+    padding: 140px 0 100px;
+  }
+
   .plans__filter-box {
     margin-bottom: 25px;
     width: 80%;
@@ -1961,6 +2119,9 @@ $blue-color: #0095a4;
   }
 
   /*----------------------------------------------------------------------------------------*/
+  .main__gallery {
+    padding-bottom: 120px;
+  }
 
   .slide__img img {
     width: 300px;
@@ -1978,8 +2139,52 @@ $blue-color: #0095a4;
   .gallery__subtitle {
     margin-bottom: 15px;
   }
-}
 
+  /*----------------------------------------------------------------------------------------*/
+
+  .main__chance {
+    height: 812px;
+    margin-bottom: 120px;
+  }
+
+  .chance__row {
+    flex-direction: column;
+  }
+
+  .chance__title {
+    max-width: 260px;
+    margin: 20px 0 10px;
+  }
+
+  .chance__box-form {
+    margin-top: 15px;
+    height: 631px;
+    width: 350px;
+  }
+
+  .chance__input {
+    width: 240px;
+    padding: 12px 12px;
+    margin-top: 7px;
+  }
+
+  .chance__form {
+    margin-top: 25px;
+  }
+
+  .chance__textarea {
+    margin: 5px 0 20px;
+  }
+
+  .chance__btn {
+    margin-bottom: 15px;
+    font-size: 16px;
+    padding: 10px 0;
+  }
+  .chance__desc {
+    font-size: 11px;
+  }
+}
 /*======================================== 400px ==================================================*/
 
 @media (max-width: 400px) {
@@ -2044,14 +2249,16 @@ $blue-color: #0095a4;
 
   .amenities__title,
   .plans__title,
-  .gallery__title {
+  .gallery__title,
+  .chance__title {
     font-size: 30px;
   }
 
   .amenities__desc,
   .amenities__subtitle,
   .plans__subtitle,
-  .gallery__subtitle {
+  .gallery__subtitle,
+  .chance__subtitle {
     font-size: 14px;
   }
 
@@ -2130,5 +2337,46 @@ $blue-color: #0095a4;
   .swiper-button-next:after,
   .swiper-button-prev:after {
     font-size: 20px;
+  }
+
+  /*----------------------------------------------------------------------------------------*/
+  
+  .main__chance {
+    height: 785px;
+  }
+
+  .chance__title {
+    margin: 10px 0;
+  }
+
+  .chance__form-title {
+    font-size: 20px;
+  }
+
+  .chance__box-form {
+    width: 280px;
+  }
+
+  .chance__input {
+    width: 180px;
+  }
+
+  .chance__input,
+  .chance__message {
+    font-size: 13px;
+  }
+
+  .chance__textarea {
+    width: 79%;
+  }
+
+  .chance__btn {
+    padding: 8px 0;
+    font-size: 15px;
+  }
+
+  .chance__desc {
+    text-align: center;
+    max-width: 200px;
   }
 }
