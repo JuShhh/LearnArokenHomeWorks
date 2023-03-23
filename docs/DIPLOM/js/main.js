@@ -16,8 +16,47 @@ let swiper = new Swiper(document.querySelector(".swiper"), {
   speed: 700,
   spaceBetween: -100,
   loop: true,
-  autoplay: {
-    delay: 5000,
+  // autoplay: {
+  //   delay: 3000,
+  // },
+
+  breakpoints: {
+    340: {
+      slidesPerView: 1,
+      spaceBetween: 0,
+    },
+    600: {
+      slidesPerView: 1.4,
+      spaceBetween: -30,
+    },
+    650:
+    {
+      slidesPerView: 1.5,
+      spaceBetween: -50,
+    },
+
+    700:
+    {
+      slidesPerView: 1.6,
+      spaceBetween: -40,
+    },
+
+    800:
+    {
+      slidesPerView: 1.8,
+      spaceBetween: -40,
+    },
+
+    900:
+    {
+      slidesPerView: 1.85,
+      spaceBetween: -45,
+    },
+    
+    1000: {
+      slidesPerView: 2,
+      spaceBetween: -50,
+    },
   },
 });
 
@@ -48,7 +87,6 @@ $(function () {
   });
 });
 
-
 $(function () {
   $(window).on("scroll", function () {
     if (
@@ -68,4 +106,3 @@ $(function () {
     $(".burger").toggleClass("open");
   });
 });
-
