@@ -19,7 +19,6 @@ let swiper = new Swiper(document.querySelector(".swiper"), {
   autoplay: {
     delay: 3000,
   },
-
   breakpoints: {
     320: {
       slidesPerView: 1,
